@@ -1,0 +1,28 @@
+<!-- 添加商品到购物车  数据实现了双向绑定-->
+<div class="cart">
+	<div class="listItem" ng-repeat="item in customer.cart" ng-init="product = item.product[0]">
+		<a class="img-bg" ng-click="setProduct(product._id)"><img ng-src="../images/{{product.imagesfile}}"></a>
+		<span class="name">{{product.name}}</span>
+		<p>
+			<span class="price">{{product.price | currency}}</span>
+			<input class="que" type="text" ng-model="item.quantity" disabled="disabled" />
+			<label class="que">Quantity</label>
+			<a class="remove" ng-click="deleteCart(product._id)">Remove</a>
+		</p>
+	</div>
+	<hr>
+	<div class="sipping">
+		<span>Shipping</span>
+		<span class="price">{{shipping | currency}}</span>
+	</div>
+	<hr>
+	<div class="sipping">
+		<span>Totall</span>
+		<span class="price">{{cartTotal() | currency}}</span>
+	</div>
+	<hr>
+	<div class="btn-link">
+		<a class="button" ng-click="checkout()" ng-hide="customer.cart.length == 0">结账</a>
+		<a class="button" ng-click="setContent('products.html')">继续购物</a>
+	</div>
+</div>

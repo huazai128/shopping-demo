@@ -1,0 +1,10 @@
+<div class="product">
+	<i><img ng-src="../images/{{product.imagesfile}}"></i>
+	<div class="prod-info">
+		<p class="name"><em>商品名称：</em>{{product.name}}</p>
+		<p class="prod-des">商品描述：{{product.description}}</p>
+		<p class="price">商品价格：{{product.price | currency}}</p>
+		<p class="status">库 存：{{product.instock}}</p>
+		<a class="btn" ng-click="addTocart(product._id)">添加到购物车<img src="/images/cart.png"></a>
+	</div>
+</div>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title>node mongoose and express + angularjs</title>
+	<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+</head>
+<body>
+	<div ng-controller="myCtrl" class="container">
+		<div class="banner">
+			<h3>myStore</h3>
+			<div class="bar">
+				<a class="orders" ng-click="setContent('orders.html')">Orders</a>
+				<a class="cart" ng-click="setContent('cart.html')"> items<img src="/images/cart.png"></a>
+			</div>
+		</div>
+		<div class="main">
+			<div ng-include="content"></div>
+		</div>
+	</div>
+	<script src="http://code.angularjs.org/1.2.9/angular.js"></script>
+	<script type="text/javascript" src="/static/js/card-app.js"></script>
+</body>
+</html>

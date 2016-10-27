@@ -1,0 +1,70 @@
+*{padding: 0;margin: 0;}
+body{font-family: "微软雅黑";font-size: 12px;}
+em,i{font-style: normal;}
+.container{padding: 5px 15px;}
+.container h3{padding: 15px 0;text-align: center;height: 36px;font-size: 36px;border-radius: 4px;background: #f5f5f5;}
+.banner{padding-bottom: 15px;border-bottom: 2px solid #e6e6e6;}
+.bar{overflow: hidden;}
+.bar a{display: block;float: right;margin-top: 10px;width: 70px;margin-left: 10px;line-height: 30px;text-align: center;cursor: pointer;background: #f5f5f5;border-radius: 5px;}
+.bar a img{width: 18px;height: auto;margin-top: 5px;}
+.bar a:hover{background: #e6e6e6;}
+
+ul{list-style: none;}
+.products li{padding: 5px 10px;}
+.products li a{cursor: pointer;}
+.products li img{width: 100px;height: auto;}
+.products li span{padding-left: 30px;}
+.products li span.price{float: right;line-height: 40px;}
+
+.orders li{padding: 5px 10px;}
+.orders h4{font-size: 30px;padding: 10px 0;}
+.orders .times{float: right;}
+.orders .status{margin-bottom: 10px;}
+.orders li a{cursor: pointer;}
+.orders li img{width: 100px;height: auto;}
+.orders li span{padding-left: 30px;}
+.orders li span.price{float: right;line-height: 40px;}
+.orders .list p{float: right;width: 400px;padding-top:15px;}
+.orders .list p span,
+.orders .list p label{display: block;float: left;width: 45.333%;text-align: right;}
+
+.product {margin: 30px;}
+.product i{display: block;width: 320px;height: auto;float: left}
+.product i img{width: 100%;height: auto;}
+.prod-info{float: left;margin-left: 40px;}
+.prod-info .name{font-size: 20px;padding: 20px 0;}
+.prod-info .name em{font-size: 12px;}
+.prod-info p{padding: 10px 0;}
+.prod-info .btn img{width: 18px;height: auto;margin-top: 5px;}
+.prod-info .btn{display: block;width: 140px;height: 34px;line-height: 34px;border-radius: 4px;text-align: center;font-size: 18px;background: #e6e6e6;cursor: pointer;}
+
+.cart .listItem {padding: 10px 0;overflow: hidden;border-bottom: 1px solid #e6e6e6;}
+.cart .listItem a.img-bg{display: block;float:left;width: 100px;height: auto;}
+.cart .listItem img{width: 100px;height: auto;}
+.cart .listItem .name{float: left;margin-left: 30px;line-height: 80px;}
+.cart .listItem p{float: right;line-height: 80px;}
+.cart .listItem .price{padding-right: 50px;}
+.cart .listItem .que{margin: 0 50px;}
+.cart .listItem input{width: 50px;}
+
+.cart .listItem .remove{display: inline-block;width: 100px;height: 34px;line-height: 34px;cursor:pointer;background: #e6e6e6;text-align: center;}
+
+.sipping{padding: 8px 0;}
+.sipping .price{float: right;}
+.btn-link{margin-top: 20px;}
+.button{display: block;float:left;margin-right: 50px;width: 120px;height: 34px;line-height: 34px;cursor:pointer;text-align: center;background: #e6e6e6;}
+
+
+.address h4{padding: 15px 0;font-size: 30px;}
+.address .form-group{margin-bottom: 15px;overflow: hidden;}
+.address .form-btn{margin-top: 15px;}
+.address .form-group label{display: block;width: 100px;float: left;line-height: 34px;}
+.address .form-group input{width: 60%;height: 34px;border: 1px solid #e5e5e5;float: left;margin-left: 10px;}
+.address.billing .form-group label{width: auto;display: inherit;}
+
+.review ul{overflow: hidden;margin: 15px;}
+.review li{width: 50%;float: left;}
+.review h5{font-size: 18px;}
+.review p{padding: 5px 0;}
+
+

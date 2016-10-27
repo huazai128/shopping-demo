@@ -1,0 +1,49 @@
+<div class="cart">
+	<div class="listItem" ng-repeat="item in customer.cart" ng-init="product = item.product[0]">
+		<a class="img-bg" ng-click="setProduct(product._id)"><img ng-src="../images/{{product.imagesfile}}"></a>
+		<span class="name">{{product.name}}</span>
+		<p>
+			<span class="price">{{product.price | currency}}</span>
+			<span class="que">{{item.quantity}}</span>
+			<label class="que">Quantity</label>
+		</p>
+	</div>
+	<hr>
+	<div class="sipping">
+		<span>Shipping</span>
+		<span class="price">{{shipping | currency}}</span>
+	</div>
+	<hr>
+	<div class="sipping">
+		<span>Totall</span>
+		<span class="price">{{cartTotal() | currency}}</span>
+	</div>
+</div>
+<hr>
+<div class="review">
+	<ul>
+		<li >
+			<h5>Shipping: </h5>
+			<p>{{customer.shipping[0].name}}</p>
+			<p>{{customer.shipping[0].address}}</p>
+			<p>{{customer.shipping[0].city}}</p>
+			<p>{{customer.shipping[0].status}}</p>
+			<p>{{customer.billing[0].address[0].zip}}</p>
+		</li>
+		<li>
+			<h5>Billing:</h5>
+			<p>{{customer.billing[0].cardtype}}</p>
+			<p>{{customer.billing[0].number.slice(-5,-1)}}</p>
+			<p>{{customer.billing[0].address[0].name}}</p>
+			<p>{{customer.billing[0].address[0].address}}</p>
+			<p>{{customer.billing[0].address[0].status}}</p>
+			<p>{{customer.billing[0].address[0].zip}}</p>
+		</li>
+	</ul>
+</div>
+<div class="cart">
+	<div class="btn-link">
+		<a class="button" ng-click="makePur()">订单审核</a>
+		<a class="button" ng-click="setContent('products.html')">继续购物</a>
+	</div>
+</div>

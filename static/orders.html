@@ -1,0 +1,20 @@
+<div class="orders">
+	<ul>
+		<li ng-repeat="order in orders">
+			<h4>Order #{{$index+1}}</h4>
+			<p class="times">Placed {{order.timestamp | date:"yyyy-MM-dd HH:mm:ss"}}</p>
+			<p class="status">{{order.status}}</p>
+			<div class="list" ng-repeat="item in order.items" ng-init="product = item.product[0]">
+				<img ng-src="../images/{{product.imagesfile}}">
+				<span class="prod">{{product.name}}</span>
+				<p>
+					<span classs="price">商品价格: {{product.price | currency}}</span>
+					<label>数量: {{item.quantity}}</label>
+				</p>
+			</div>
+		</li>
+	</ul>
+</div>
+<div class="btn-link">
+	<input type="button" class="button" ng-click="setContent('products.html')" value="继续购物">
+</div>

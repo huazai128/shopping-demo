@@ -1,0 +1,54 @@
+<div class="address billing">
+	<h4>Card Info:</h4>
+	<div class="form-group">
+		<p><Card/p>
+		<label><input type="radio" ng-model="customer.billing[0].cardtype" value="alipay">alipay</label>
+		<label><input type="radio" ng-model="customer.billing[0].cardtype" value="MasterCard">MasterCard</label>
+		<label><input type="radio" ng-model="customer.billing[0].cardtype" value="Visa">Visa</label>
+		<label><input type="radio" ng-model="customer.billing[0].cardtype" value="Amex">Amex</label>
+		<label><input type="radio" ng-model="customer.billing[0].cardtype" value="UPcash">UPcash</label>
+	</div>
+	<div class="form-group">
+		<label>Name or Card</label>
+		<input type="text" ng-model="customer.billing[0].name">
+	</div>
+	<div class="form-group">
+		<label>Card Number</label>
+		<input type="text" ng-model="customer.billing[0].number">
+	</div>
+	<div class="form-group">
+		<label>Expires</label>
+		<select ng-model="customer.billing[0].expiremonth" ng-options="m for m in months"></select>
+		<select ng-model="customer.billing[0].expireyear" ng-options="m for m in years"></select>
+	</div>
+	<div class="form-group">
+		<label>Card CCV</label>
+		<input type="text" class="min-win" ng-model="ccv">
+	</div>
+	<h4>Billing Address</h4>
+	<div class="form-group">
+		<label>Name</label>
+		<input type="text" ng-model="customer.billing[0].address[0].name" >
+	</div>
+	<div class="form-group">
+		<label>Address</label>
+		<input type="text" ng-model="customer.billing[0].address[0].address" >
+	</div>
+	<div class="form-group">
+		<label>City</label>
+		<input type="text" ng-model="customer.billing[0].address[0].city" >
+	</div>
+	<div class="form-group">
+		<label>State</label>
+		<input type="text" ng-model="customer.billing[0].address[0].status" >
+	</div>
+	<div class="form-group">
+		<label>Zip code</label>
+		<input type="text" ng-model="customer.billing[0].address[0].zip" >
+	</div>
+	<hr>
+	<div class="form-btn">
+		<a class="button" ng-click="verifyBIlling(ccv)">验证支付</a>
+		<a class="button" ng-click="setContent('products.html')">继续购物</a>
+	</div>
+</div>

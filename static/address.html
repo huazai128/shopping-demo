@@ -1,0 +1,27 @@
+<div class="address">
+	<h4>Address To:</h4>
+	<div></div>
+	<form>
+		<div class="form-group">
+			<label>Name</label>
+			<input type="text" ng-model="customer.shipping[0].name">
+		</div>
+		<div class="form-group">
+			<label>Address</label>
+			<input type="text" ng-model="customer.shipping[0].address">
+		</div>
+		<div class="form-group">
+			<label>City</label>
+			<input type="text" ng-model="customer.shipping[0].city">
+		</div>
+		<div class="form-group">
+			<label>State</label>
+			<input type="text" ng-model="customer.shipping[0].zip">
+		</div>
+		<hr>
+		<div class="form-btn">
+			<a class="button" ng-click="setShipping()">支付</a>
+			<a class="button" ng-click="setContent('products.html')">继续购物</a>
+		</div>
+	</form>
+</div>
